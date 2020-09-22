@@ -46,7 +46,7 @@ public class RecruitmentTasks
 
     private void pascalsTriangle(int depth)
     {
-        for (int i = 0; i < depth; i++)
+        for (int i = 0; i <= depth; i++)
         {
             for (int j = 0; j <= i; j++)
             {
@@ -63,7 +63,7 @@ public class RecruitmentTasks
 
     private int pascalsRecurrence(int v, int c)
     {
-        if(c==v|| c==0)
+        if(c==v || c==0)
             return 1;
         return pascalsRecurrence(v-1,c-1) + pascalsRecurrence(v-1,c);
     }
